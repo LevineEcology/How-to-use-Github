@@ -5,7 +5,7 @@ This is a basic startup guide for Levine Lab members who are either a) new to Gi
 
 ## 1. Connecting your computer to github with ssh
 
-Github has a [detailed guide](https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh) to this, though I will go through the basics for mac users (I think a majority of us) just so this is all in one place. 
+Github has a [detailed guide](https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh) on this, though I will go through the basics for mac users (I think a majority of us) just so this is all in one place. 
 
 SSH stands for "Secure SHell," and is a network protocol for securely connecting over an unsecured network. It works through cryptographic elements called "keys", which are unique to your device and must be generated in the command line. If you do remote computing you likely have an ssh key generated on your computer.
 
@@ -64,7 +64,7 @@ Once set up, ssh will allow you to integrate work on your local computer with th
 
 4. Click "New SSH key"
 
-5. Add a "Title" like "Macbook Pro"
+5. Add a title, maybe something like: "Jacob's Macbook Pro"
 
 6. Paste your key into the "key field"
 
@@ -87,11 +87,11 @@ First, lets learn how to create a new repository.
 
 4. Select the visibility of the repository, either public or private. Public repositories are openly available to anybody with the link, whereas private repositories are only visible to members of the organization. For example, this how-to repository is public, whereas my "SedgwickWaterCompetition" repo is private. Once published, I will likely make that repository public and link to it so that others may use my data and replicate my results -- another benefit of Github. 
 
-5. Select "Add a README file". This is technically optional, but a README is generally a good idea and should be the place where you include and general information and metadata about the repository so that others can make use of it without much headache. README's are typically written in the (very intuitive) [markdown language](https://www.markdownguide.org/cheat-sheet/) and have the ".md" file extension. This file is written in markdown, for example. 
+5. Select "Add a README file". This is technically optional, but a README is generally a good idea and should be the place where you include general information and metadata about the repository so that others can make use of it without much headache. README's are typically written in the (very intuitive) [markdown language](https://www.markdownguide.org/cheat-sheet/) and have the ".md" file extension. This file is written in markdown, for example. 
 
 6. Select "create repository".
 
-#### 2.2 Cloning your repository to your local device 
+#### 2.2 Cloning a repository to your local device 
 
 Now that you have created a repository, it is time to create a copy of it on your local device (called "cloning") and begin adding to it. 
 
@@ -108,9 +108,9 @@ Now that you have created a repository, it is time to create a copy of it on you
 6. Type `git clone`, and then paste the URL you just copied i.e. `git clone git@github.com:LevineEcology/How-to-use-Github.git`. Press enter. 
 
 
-## 3. Working on your repository -- Commits and Pushes
+## 3. Working on a repository -- Commits and Pushes
 
-#### 3.1 Adding your github account info to your local machine
+#### 3.1 Adding Github account info to your local machine
 
 You will first want to give your Github account information to your local machine so that Github can recognize your interactions. 
 
@@ -126,9 +126,11 @@ What follows is the basic workflow for adding to or working on your repository. 
 
 After you commit your work, you must also perform what is called a push. A push is what takes your changes from your local machine to the Github page. Without pushing, the only record of your commit is on your computer. 
 
+If using the command line is unappealing/scary etc. you can download and use Githubs GUI [here](https://desktop.github.com/), though I have never used it. If you are unfamiliar with command line interaction it can be a bit weird/slow at first, but eventually it becomes fast and second nature. 
+
 Here is an example workflow, where we will make a simple edit to your repo's README.md file.
 
-1. Navigate to your repository folder in terminal using `cd` (change directory), i.e. `cd ~/Documents/How-to-use-Github.git`
+1. Navigate to your repository folder in terminal using `cd` (change directory), i.e. `cd ~/Documents/How-to-use-Github`
 
 2. Type `ls` into terminal and press enter to list the files in your repository. One of them should be called README.md
 
